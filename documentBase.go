@@ -1,8 +1,9 @@
 package bongo
 
 import (
-	"gopkg.in/mgo.v2/bson"
 	"time"
+
+	"github.com/globalsign/mgo/bson"
 )
 
 type DocumentBase struct {

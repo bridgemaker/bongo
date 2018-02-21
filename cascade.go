@@ -2,11 +2,12 @@ package bongo
 
 import (
 	"errors"
+	"strings"
+
+	"github.com/globalsign/mgo"
+	"github.com/globalsign/mgo/bson"
 	"github.com/go-bongo/go-dotaccess"
 	"github.com/oleiade/reflections"
-	"gopkg.in/mgo.v2"
-	"gopkg.in/mgo.v2/bson"
-	"strings"
 )
 
 // Relation types (one-to-many or one-to-one)

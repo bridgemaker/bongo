@@ -2,9 +2,10 @@ package bongo
 
 import (
 	"errors"
-	. "github.com/smartystreets/goconvey/convey"
-	"gopkg.in/mgo.v2/bson"
 	"testing"
+
+	"github.com/globalsign/mgo/bson"
+	. "github.com/smartystreets/goconvey/convey"
 )
 
 type noHookDocument struct {

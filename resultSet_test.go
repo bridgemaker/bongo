@@ -1,9 +1,10 @@
 package bongo
 
 import (
-	. "github.com/smartystreets/goconvey/convey"
-	"gopkg.in/mgo.v2/bson"
 	"testing"
+
+	"github.com/globalsign/mgo/bson"
+	. "github.com/smartystreets/goconvey/convey"
 )
 
 func TestResultSet(t *testing.T) {

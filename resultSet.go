@@ -1,8 +1,9 @@
 package bongo
 
 import (
-	"gopkg.in/mgo.v2"
 	"math"
+
+	"github.com/globalsign/mgo"
 )
 
 type ResultSet struct {

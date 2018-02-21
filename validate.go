@@ -1,8 +1,9 @@
 package bongo
 
 import (
-	"gopkg.in/mgo.v2/bson"
 	"reflect"
+
+	"github.com/globalsign/mgo/bson"
 )
 
 func ValidateRequired(val interface{}) bool {
