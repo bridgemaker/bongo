@@ -50,6 +50,16 @@ func (d *DocumentBase) SetModified(t time.Time) {
 	d.Modified = t
 }
 
+func (d *DocumentBase) BeforeSave(*Collection) error {
+	if d.IsNew() {
+		d.Created = time.Now()
+	}
+
+	d.Modified = time.Now()
+
+	return nil
+}
+
 // Get's the modified date
 func (d *DocumentBase) GetModified() time.Time {
 	return d.Modified
